@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Running Docker container...'
                 sh 'docker rm -f calculator || true'
-                sh 'docker run -d --name calculator -p 8080:80 calculator-app'
+                sh 'docker run -d --name calculator -p 9090:80 calculator-app'
             }
         }
     }
